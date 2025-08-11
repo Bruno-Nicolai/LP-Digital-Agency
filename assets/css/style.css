@@ -165,3 +165,7 @@ header .container {
   transition-delay: 0.2s;
   opacity: 1;
 }
+
+.navbar .btn-primary {
+  display: none;
+}
