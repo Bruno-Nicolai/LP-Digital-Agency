@@ -51,6 +51,14 @@
   background: var(--cool-gray);
 }
 
+:focus {
+  outline-offset: 4px;
+}
+
+:is(input, textarea):focus {
+  outline: none;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -60,18 +68,18 @@ body {
   overflow-x: hidden;
 }
 
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 li {
   list-style-type: none;
 }
 
 a {
   text-decoration: none;
-}
-
-button {
-  background: none;
-  border: none;
-  cursor: pointer;
 }
 
 textarea,
@@ -92,22 +100,15 @@ textarea {
   display: block;
 }
 
-:focus {
-  outline-offset: 4px;
-}
-
-:is(input, textarea):focus {
-  outline: none;
-}
-
-.container {
-  padding: 0 15px;
-}
 
 header {
   position: relative;
   padding: 35px 0;
   z-index: 2;
+}
+
+.container {
+  padding: 0 15px;
 }
 
 header .container {
