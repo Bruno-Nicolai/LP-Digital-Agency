@@ -10,7 +10,7 @@
   if (ionicon && toggleMenuButton && navbar) {
     toggleMenuButton.addEventListener("click", () => {
       const isActive = navbar.classList.toggle("active");
-      ionicon.setAttribute("name", isActive ? "close" : "chevron-down");
+      ionicon.setAttribute("name", isActive ? "close" : "reorder-four-outline");
     });
   }
 })();
