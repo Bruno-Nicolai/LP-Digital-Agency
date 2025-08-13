@@ -179,6 +179,7 @@ header .container {
   transition: var(--transition);
   transform-origin: top;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 .navbar.active {
