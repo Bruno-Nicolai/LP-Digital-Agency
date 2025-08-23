@@ -294,6 +294,25 @@ footer .logo {
   color: var(--french-rose);
 }
 
+.footer-link-list:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.footer-link-list .link-title {
+  margin-bottom: 15px;
+}
+
+.footer-link {
+  color: var(--cool-gray);
+  font-size: var(--fs-6);
+  margin-bottom: 10px;
+  max-width: 150px;
+}
+
+.footer-link:is(:hover, :focus) {
+  color: var(--french-rose);
+}
+
 @media (min-width: 450px) {
   :root {
     --fs-1: 42px;
