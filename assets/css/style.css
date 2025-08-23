@@ -313,6 +313,26 @@ footer .logo {
   color: var(--french-rose);
 }
 
+.footer-bottom {
+  padding: 20px 15px;
+  border-top: 1px solid hasla(0, 0%, 10%, 0.2);
+}
+
+.copyright {
+  color: var(--cool-gray);
+  text-align: center;
+  font-size: var(--fs-6);
+}
+
+.copyright a {
+  display: inline-block;
+  color: var(--cool-gray);
+}
+
+.copyright a:is(:hover, :focus) {
+  color: var(--french-rose);
+}
+
 @media (min-width: 450px) {
   :root {
     --fs-1: 42px;
