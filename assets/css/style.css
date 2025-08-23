@@ -390,6 +390,14 @@ footer .logo {
     top: -156px;
     right: -152px;
   }
+
+  .footer-brand {
+    margin-bottom: 40px;
+  }
+  .footer-link-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (min-width: 768px) {
@@ -415,7 +423,6 @@ footer .logo {
   .navbar-menu-btn {
     display: none;
   }
-
   .navbar {
     max-height: unset;
     visibility: visible;
@@ -426,19 +433,16 @@ footer .logo {
     overflow: visible;
     display: flex;
   }
-
   .navbar-list {
     display: flex;
     align-items: center;
     gap: 10px;
     margin-right: 20px;
   }
-
   .nav-link {
     opacity: 1;
     padding: 0 15px;
   }
-
   .navbar .btn-primary {
     display: block;
   }
@@ -446,7 +450,6 @@ footer .logo {
   .hero-content {
     max-width: 550px;
   }
-
   .hero-banner {
     display: block;
     position: absolute;
@@ -457,6 +460,21 @@ footer .logo {
     width: 420px;
     background: url(../images/hero-banner.png) no-repeat;
     background-size: contain;
+  }
+
+  .footer-top .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+  }
+  .footer-brand,
+  .footer-link-list:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .footer-link-box {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
   }
 }
 
