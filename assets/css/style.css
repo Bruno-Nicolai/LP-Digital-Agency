@@ -351,6 +351,22 @@ header .container {
   margin-inline: 0;
 }
 
+.features {
+  padding: 120px 0;
+  text-align: center;
+}
+
+.features .section-title {
+  color: var(--royal-blue-dark);
+  margin-bottom: 20px;
+}
+
+.features .section-text {
+  color: var(--rythm);
+  font-size: var(--fs-4);
+  margin-bottom: 120px;
+}
+
 footer {
   background: var(--white-2);
 }
@@ -468,6 +484,10 @@ footer .logo {
     max-width: 400px;
     margin-inline: auto;
     margin-bottom: 40px;
+  }
+
+  .features h2 {
+    --fs-2: 32px;
   }
 }
 
@@ -594,25 +614,26 @@ footer .logo {
     max-width: 650px;
     margin-inline: auto;
   }
-
   .about-list {
     grid-template-columns: repeat(3, 1fr);
   }
-
   .about-bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-
   .about-bottom-banner {
     margin-bottom: 0;
     height: 330px;
   }
-
   .about-bottom-content {
     text-align: left;
     width: 50%;
+  }
+
+  .features :is(.section-title, .section-text) {
+    max-width: 650px;
+    margin-inline: auto;
   }
 
   .footer-top .container {
